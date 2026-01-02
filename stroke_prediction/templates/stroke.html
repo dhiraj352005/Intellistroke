@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ severity }} Stroke Risk</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f9ecec;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            border: 1px solid #e74c3c;
+        }
+        h1 {
+            text-align: center;
+            color: #e74c3c;
+        }
+        p {
+            font-size: 1.1rem;
+            color: #555;
+            line-height: 1.5;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        .icon {
+            color: #e74c3c;
+            font-size: 3rem;
+            text-align: center;
+            display: block;
+            margin: 20px auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <i class="fas fa-heartbeat icon"></i>
+        <h1>{{ severity }} of Stroke Detected</h1>
+        <p>Your stroke risk probability is <strong>{{ probability }}</strong>.</p>
+        <p>Please consult a healthcare professional immediately.</p>
+        <h2>Suggestions for Stroke Prevention</h2>
+        <ul>
+            <li>Maintain a balanced, healthy diet.</li>
+            <li>Exercise at least 30 minutes a day.</li>
+            <li>Avoid smoking and limit alcohol consumption.</li>
+            <li>Monitor your blood pressure and cholesterol levels regularly.</li>
+            <li>Manage stress effectively with relaxation techniques.</li>
+        </ul>
+    </div>
+</body>
+</html>

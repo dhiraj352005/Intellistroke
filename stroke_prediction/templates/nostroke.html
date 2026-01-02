@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>No Stroke Risk</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #e9f7ef;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            border: 1px solid #28a745;
+        }
+        h1 {
+            text-align: center;
+            color: #28a745;
+        }
+        p {
+            font-size: 1.1rem;
+            color: #555;
+            line-height: 1.5;
+        }
+        .icon {
+            color: #28a745;
+            font-size: 3rem;
+            text-align: center;
+            display: block;
+            margin: 20px auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <i class="fas fa-thumbs-up icon"></i>
+        <h1>No Stroke Risk Detected</h1>
+        <p>Your stroke risk probability is <strong>{{ probability }}</strong>. This indicates that you are at low risk for stroke.</p>
+        <p>Keep following a healthy lifestyle to maintain your well-being.</p>
+    </div>
+</body>
+</html>
